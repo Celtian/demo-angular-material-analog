@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgxAppVersionDirective } from 'ngx-app-version';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +14,6 @@ import { RouterOutlet } from '@angular/router';
       text-align: center;
     }
   `,
+  hostDirectives: [NgxAppVersionDirective],
 })
 export class App {}

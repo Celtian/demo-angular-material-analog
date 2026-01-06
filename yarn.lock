@@ -5518,6 +5518,13 @@ negotiator@^1.0.0:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
   integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
 
+ngx-app-version@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-app-version/-/ngx-app-version-2.2.0.tgz#23055937b2e67a4e102554c1ca41618b1953f0c5"
+  integrity sha512-Jz6RwfQpBln+zoTghPsMfEI+bTGCW5TImka8jyhmM8l5K6LhE6LOYwvcyDfWQorA7OHt9L4iLQ7Xubd1gLHKrA==
+  dependencies:
+    tslib "^2.3.0"
+
 nitropack@^2.11.0:
   version "2.12.9"
   resolved "https://registry.yarnpkg.com/nitropack/-/nitropack-2.12.9.tgz#2c92765440f980d27a8c3b378f3a850e66157ce4"
@@ -5914,6 +5921,11 @@ package-json-from-dist@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/package-json-from-dist/-/package-json-from-dist-1.0.1.tgz#4f1471a010827a86f94cfd9b0727e36d267de505"
   integrity sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==
+
+package-version-info@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/package-version-info/-/package-version-info-0.0.6.tgz#3e8c06ea82d31ee5e3d65da50521c320d08ad770"
+  integrity sha512-3gssN99QkdfKeMc5fFCdCK4aCxxHfm6zElxcBcct0IarHfIBeQ85HRQSuqXS/ImVgRYDhvzakIJeoprRUDm9yg==
 
 pacote@21.0.3:
   version "21.0.3"
