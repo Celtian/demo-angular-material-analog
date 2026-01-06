@@ -1,7 +1,14 @@
 {
   "name": "demo-angular-material-analog",
   "version": "0.0.0",
+  "author": {
+    "name": "Dominik Hladík",
+    "email": "dominik.hladik@seznam.cz",
+    "url": "https://github.com/Celtian"
+  },
   "type": "module",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": ">=20.19.1"
   },
@@ -12,9 +19,22 @@
     "build": "vite build",
     "watch": "vite build --watch",
     "test": "vitest",
-    "preview": "node dist/analog/server/index.mjs"
+    "preview": "node dist/analog/server/index.mjs",
+    "fix-vulnerabilities": "npx yarn-audit-fix && npx browserslist --update-db",
+    "prepare": "husky"
   },
-  "private": true,
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
   "dependencies": {
     "@analogjs/content": "^2.2.1",
     "@analogjs/router": "^2.2.1",
@@ -45,8 +65,13 @@
     "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.6",
+    "@commitlint/cli": "^20.3.0",
+    "@commitlint/config-angular": "^20.3.0",
+    "angular-eslint": "21.1.0",
     "h3": "^1.13.0",
+    "husky": "^9.1.7",
     "jsdom": "^27.4.0",
+    "lint-staged": "^16.2.7",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
     "vite-tsconfig-paths": "^6.0.3",
